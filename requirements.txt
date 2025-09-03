@@ -1,0 +1,17 @@
+langchain==0.3.27
+langchain-community==0.3.27
+langchain-core==0.3.74
+langchain-openai==0.3.30
+langchain-text-splitters==0.3.9
+python-dotenv==1.0.1
+pypdf
+chromadb
+faiss-cpu
+pinecone
+langchain_pinecone
+langchain_groq
+langserve
+uvicorn
+sse_starlette
+huggingface_hub[hf_xet]
+langgraph
