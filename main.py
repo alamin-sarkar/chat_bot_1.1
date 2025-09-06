@@ -119,9 +119,9 @@ def get_relevant_history(session_id, query, top_k=3):
 
 
 # --- Streamlit UI ---
-st.title("Chat bot with Pinecone Memory")
-
-session_id = "chat_1"
+st.title("Your Personalized Chatbot")
+session_id = st.text_input("Enter User ID:", placeholder="user123")
+# session_id = "chat_1"
 col1, col2 = st.columns([3, 1])
 with col1:
     user_input = st.text_input("Write your question here...")
@@ -147,3 +147,6 @@ if user_input:
 
     save_message_if_new(session_id=session_id, role="user", content=user_input)
     save_message_if_new(session_id=session_id, role="assistant", content=response.content)
+    
+    
+# 
